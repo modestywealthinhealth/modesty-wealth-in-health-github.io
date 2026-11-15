@@ -1,200 +1,194 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>MODESTY WEALTH IN HEALTH – Wellness, Systematic Wealth &amp; Structure</title>
-<script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Wealth in Health | Everyday Wellness Products</title>
+<meta name="description" content="Wealth in Health offers clearly labelled, quality-checked wellness products for everyday life.">
+<meta name="theme-color" content="#0f2f2a">
+<meta property="og:title" content="Wealth in Health">
+<meta property="og:description" content="Clearly labelled, quality-checked wellness products for everyday life.">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E🌿%3C/text%3E%3C/svg%3E">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"Wealth in Health","description":"Everyday wellness products"}</script>
 <style>
-:root{--bg:#fff;--fg:#222;--accent:#b0122e;--soft:#fbeef0;--card:#fff;--line:#e6d3d6}
-@media (prefers-color-scheme:dark){:root:not([data-theme=light]){--bg:#1a1214;--fg:#f3e9ea;--soft:#2a1a1e;--card:#221518;--line:#4a2e34}}
-*{box-sizing:border-box}
-html{scroll-behavior:smooth}
-body{margin:0;font-family:Georgia,"Times New Roman",serif;background:var(--bg);color:var(--fg);line-height:1.65;padding:env(safe-area-inset-top,0) 0 env(safe-area-inset-bottom,0)}
-section{padding:42px 18px}
-.w{max-width:820px;margin:0 auto}
-.alt{background:var(--soft)}
-h1,h2,h3{line-height:1.25;color:var(--accent);font-family:Arial,Helvetica,sans-serif}
-h1{font-size:clamp(1.6rem,5vw,2.4rem);text-align:center}
-h2{font-size:clamp(1.3rem,4vw,1.8rem);text-align:center}
-h3{font-size:clamp(1.1rem,3.5vw,1.4rem);text-align:center}
-p{margin:.8em 0}
-img{max-width:100%;height:auto;display:block;margin:20px auto;border-radius:6px}
-.c{text-align:center}
-ul{padding-left:1.2em}
-.btn{display:inline-block;background:var(--accent);color:#fff;border:0;border-radius:6px;padding:14px 30px;font:700 1rem Arial,sans-serif;text-decoration:none;cursor:pointer}
-.btn:disabled{opacity:.6;cursor:wait}
-.hero{background:var(--accent);color:#fff;text-align:center}
-.hero h1{color:#fff;margin:.2em 0}
-form{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:22px;margin-top:18px}
-label{display:block;font:700 .95rem Arial,sans-serif;margin:14px 0 5px}
-input{width:100%;padding:12px;border:1px solid var(--line);border-radius:5px;font:1rem Arial,sans-serif;background:var(--bg);color:var(--fg)}
-.hp{position:absolute;left:-9999px;height:0;overflow:hidden}
-#msg{margin-top:14px;padding:12px;border-radius:5px;display:none;font:.95rem Arial,sans-serif}
-#msg.ok{display:block;background:#e3f5e6;color:#14532d}
-#msg.err{display:block;background:#fde4e4;color:#7f1d1d}
-#top{position:fixed;right:14px;bottom:calc(14px + env(safe-area-inset-bottom,0px));background:var(--accent);color:#fff;border:0;border-radius:50%;width:44px;height:44px;font-size:1.2rem;cursor:pointer;display:none}
-a{color:var(--accent);word-break:break-all}
+:root{--ink:#0f2f2a;--leaf:#1f6f5c;--mint:#e4f1ea;--paper:#fbfdfc;--gold:#b8861f;--muted:#46605a;--line:#cadcd3;--card:#fff;
+--serif:"Iowan Old Style","Palatino Linotype",Georgia,serif;--sans:system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif}
+@media (prefers-color-scheme:dark){:root{--ink:#e6f2ec;--leaf:#6fcfb0;--mint:#12302a;--paper:#0b1d19;--gold:#e0b04e;--muted:#a3bdb5;--line:#244039;--card:#102722}}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:70px}
+body{margin:0;font-family:var(--sans);color:var(--ink);background:var(--paper);line-height:1.65}
+a{color:inherit}:focus-visible{outline:3px solid var(--gold);outline-offset:3px}
+.wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+.skip{position:absolute;left:-999px}.skip:focus{left:10px;top:10px;background:var(--paper);padding:8px;z-index:20}
+header{position:sticky;top:0;z-index:10;background:var(--paper);border-bottom:1px solid var(--line)}
+header .wrap{display:flex;align-items:center;justify-content:space-between;height:64px}
+.logo{font-family:var(--serif);font-weight:700;font-size:1.25rem;text-decoration:none}.logo b{color:var(--gold)}
+nav{display:flex;gap:22px}nav a{text-decoration:none;color:var(--muted);font-size:.95rem}nav a:hover{color:var(--ink)}
+#menu{display:none;background:none;border:1px solid var(--line);border-radius:6px;padding:8px 12px;color:var(--ink);font:inherit;cursor:pointer}
+.hero{background:linear-gradient(160deg,var(--mint),var(--paper) 70%);padding:84px 0 64px}
+.hero .wrap{display:grid;gap:40px;grid-template-columns:1.3fr 1fr;align-items:center}
+h1{font-family:var(--serif);font-size:clamp(2.3rem,6vw,4rem);line-height:1.06;margin:0 0 20px;letter-spacing:-.01em}
+.hero p{font-size:1.12rem;color:var(--muted);max-width:50ch;margin:0 0 28px}
+.btn{display:inline-block;padding:13px 26px;border-radius:6px;background:var(--leaf);color:#fff;text-decoration:none;font:600 1rem var(--sans);border:2px solid var(--leaf);cursor:pointer}
+.btn:hover{background:var(--ink);border-color:var(--ink);color:var(--paper)}
+.btn.alt{background:transparent;color:var(--ink);border-color:var(--ink);margin-left:10px}
+.panel{border:1px solid var(--line);border-radius:10px;background:var(--card);padding:26px}
+.panel h2{font-size:1.1rem;margin:0 0 14px}
+.panel ul{list-style:none;margin:0;padding:0}.panel li{padding:10px 0;border-top:1px solid var(--line);display:flex;gap:10px}
+.panel li:first-child{border-top:0}.panel li span{color:var(--gold);font-weight:700}
+section{padding:68px 0}h2.t{font-family:var(--serif);font-size:2rem;margin:0 0 8px}
+.lead{color:var(--muted);max-width:58ch;margin:0 0 28px}
+.filters{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:24px}
+.filters button{border:1px solid var(--line);background:var(--card);color:var(--ink);padding:8px 16px;border-radius:999px;cursor:pointer;font:inherit;font-size:.92rem}
+.filters button[aria-pressed=true]{background:var(--ink);color:var(--paper);border-color:var(--ink)}
+.grid{display:grid;gap:20px;grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+.item{background:var(--card);border:1px solid var(--line);border-top:4px solid var(--gold);border-radius:4px;padding:22px;display:flex;flex-direction:column}
+.item[hidden]{display:none}
+.item small{color:var(--leaf);font-weight:600}.item h3{font-family:var(--serif);font-size:1.25rem;margin:4px 0 8px}
+.item p{color:var(--muted);font-size:.96rem;margin:0 0 16px;flex:1}
+.row{display:flex;justify-content:space-between;align-items:center}.price{font-weight:700;font-size:1.1rem}
+.item .btn{padding:8px 16px;font-size:.9rem}
+.alt-bg{background:var(--mint)}
+.cols{display:grid;gap:24px;grid-template-columns:repeat(auto-fit,minmax(230px,1fr))}
+.cols h3{font-family:var(--serif);margin:0 0 6px}.cols p{margin:0;color:var(--muted)}
+details{border-bottom:1px solid var(--line);padding:14px 0;max-width:720px}
+summary{cursor:pointer;font-weight:600}details p{color:var(--muted);margin:8px 0 0}
+form{display:grid;gap:14px;max-width:520px}label{font-weight:600;font-size:.92rem}
+input,textarea,select{width:100%;padding:12px;border:1px solid var(--line);border-radius:6px;font:inherit;background:var(--card);color:var(--ink)}
+textarea{min-height:120px;resize:vertical}#msg{min-height:1.4em;color:var(--leaf);font-weight:600}
+footer{padding:30px 0;border-top:1px solid var(--line);color:var(--muted);font-size:.88rem}
+@media (max-width:760px){.hero .wrap{grid-template-columns:1fr}#menu{display:block}
+nav{display:none;position:absolute;top:64px;left:0;right:0;flex-direction:column;gap:0;background:var(--paper);border-bottom:1px solid var(--line)}
+nav.open{display:flex}nav a{padding:14px 20px;border-top:1px solid var(--line)}.btn.alt{margin:10px 0 0}}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 </style>
 </head>
 <body>
+<a class="skip" href="#main">Skip to content</a>
+<header>
+  <div class="wrap">
+    <a class="logo" href="#top">Wealth in <b>Health</b></a>
+    <button id="menu" aria-expanded="false" aria-controls="nav">Menu</button>
+    <nav id="nav" aria-label="Main">
+      <a href="#products">Products</a><a href="#why">Why us</a><a href="#faq">FAQ</a><a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
 
-<section class="hero"><div class="w">
-<h1>WANT TO PROTECT YOUR HEALTH WITH GENUINE SOLUTION?</h1>
-<h1>Here comes the solution...</h1>
-</div></section>
+<main id="main">
+<div class="hero" id="top">
+  <div class="wrap">
+    <div>
+      <h1>Good health is the best investment you will make.</h1>
+      <p>Clearly labelled, quality-checked wellness products for everyday life, with honest advice and no hype.</p>
+      <a class="btn" href="#products">Shop products</a><a class="btn alt" href="#contact">Ask a question</a>
+    </div>
+    <aside class="panel" aria-label="Our promise">
+      <h2>What you can expect</h2>
+      <ul>
+        <li><span>✓</span> Every ingredient listed in plain language</li>
+        <li><span>✓</span> Trusted, checked suppliers</li>
+        <li><span>✓</span> Real answers from a real person</li>
+      </ul>
+    </aside>
+  </div>
+</div>
 
-<section class="alt"><div class="w">
-<h2>DOUBLE RED ROSE! (DRR)</h2>
-<h2>A Better Wellness Routine Can Start with One Simple Choice - <em>"Superfruit-based Antioxidant Drink or Supplement!"</em></h2>
-<img src="https://www.modestywealthinhealth.com.ng/wp-content/uploads/2026/10/multiple.png" alt="Double Red Rose">
-</div></section>
+<section id="products">
+  <div class="wrap">
+    <h2 class="t">Our products</h2>
+    <p class="lead">Choose a category, then tap “Enquire” to message us about an item.</p>
+    <div class="filters" role="group" aria-label="Filter products">
+      <button aria-pressed="true" data-f="all">All</button>
+      <button aria-pressed="false" data-f="Supplements">Supplements</button>
+      <button aria-pressed="false" data-f="Teas">Teas</button>
+      <button aria-pressed="false" data-f="Essentials">Essentials</button>
+    </div>
+    <div class="grid" id="grid"></div>
+  </div>
+</section>
 
-<section><div class="w">
-<h1>DOUBLE RED ROSE?</h1>
-<p><strong><em>Double Red Rose</em> refers to a superfruit-based antioxidant drink or supplement formulated with multiple red botanicals.</strong></p>
-<p><strong>It's a nutritional wellness supplement manufactured and marketed by the direct-selling Affluence Global.</strong></p>
-<p><strong>The name refers to Cellular Generation/Health driven by a proprietary "12-in-1 blend" of natural ingredients.</strong></p>
-<p>These ingredients are rich in the following:<br>polyphenols<br>nthocyanins<br>Vtamin C, and other phytonutrients that support whole‑body wellness.</p>
-<p>Here're are the "12-in-1 blend" of natural ingredients:</p>
-<ul><li><em>Double Red Rose</em></li><li><em>Goji Berry</em></li><li><em>Pomegranate P</em></li><li><em>Peach</em></li><li><em>Chinese Dates (Jujube)</em></li><li><em>Red Grapes</em></li><li><em>Acerola Cherry</em></li><li><em>Lemon</em></li><li><em>Red Ginseng</em></li><li><em>Carobe Extract&amp; Roselle</em></li><li><em>Honey Locust</em></li><li><em>NAC (Normal Acetyl Cysteine)</em></li></ul>
-<p>It provides strong antioxidant support, improved skin vitality, cardiovascular wellness, mood balance, and overall daily wellbeing...</p>
-<p>Thanks to its blend of red superfruits such as pomegranate, goji berry, red grapes, roselle, and acerola cherry.</p>
-<p>Finding a quality wellness product you can feel, confident buying isn’t always easy. So, what should you look for?</p>
-<p>Something convenient, properly packaged, and backed by a seller you can trust.</p>
-<p>The biggest concern is often quality and authenticity.</p>
-<p>That’s where <em>Double Red Rose</em> comes in — a convenient addition to your personal wellness routine.</p>
-</div></section>
+<section id="why" class="alt-bg">
+  <div class="wrap">
+    <h2 class="t">Why Wealth in Health</h2>
+    <p class="lead">Wellness works best when it is simple and trustworthy.</p>
+    <div class="cols">
+      <div><h3>Transparent</h3><p>Clear labels so you know exactly what you are taking.</p></div>
+      <div><h3>Quality-checked</h3><p>Ingredients sourced from suppliers we trust and review.</p></div>
+      <div><h3>Honest</h3><p>Our products support a healthy lifestyle and never replace medical care.</p></div>
+    </div>
+  </div>
+</section>
 
-<section class="alt"><div class="w">
-<h1>DOUBLE RED ROSE</h1>
-<p class="c"><strong>Make Wellness a Beautiful Part of Your Everyday Life</strong></p>
-<p>Your well-being deserves attention!</p>
-<p>Make today the beginning of a more intentional wellness routine!.</p>
-<p><strong>Are You Giving Your Well-Being the Attention It Deserves?</strong></p>
-<p>Life can get busy.</p>
-<p>Between work, family, business, and everyday responsibilities, taking care of yourself can easily move to the bottom of your priority list.</p>
-<p>But looking after yourself shouldn't have to wait until you have more time.</p>
-<p>Your wellness routine deserves the same attention you give to everything else that matters.</p>
-<p><strong>Don't Keep Putting Yourself Last!</strong></p>
-<p>It's easy to promise yourself that you'll start taking better care of yourself tomorrow.</p>
-<p>Then tomorrow becomes next week, and next week becomes another month.</p>
-<p>The truth is that building a wellness routine doesn't have to be complicated.</p>
-<p>Sometimes, the first step is simply discovering a product that fits your needs, preferences, and lifestyle.</p>
-<p>You deserve to make informed choices about your well-being instead of leaving it to chance.</p>
-</div></section>
+<section id="faq">
+  <div class="wrap">
+    <h2 class="t">Questions</h2><p class="lead">Quick answers before you get in touch.</p>
+    <details><summary>How do I order?</summary><p>Tap “Enquire” on a product or use the contact form, and we will reply with ordering details.</p></details>
+    <details><summary>Are your products a medical treatment?</summary><p>No. They are wellness products and are not intended to diagnose, treat or cure any disease. Speak to your doctor if you have a health condition.</p></details>
+    <details><summary>How long does delivery take?</summary><p>Delivery times depend on your location. Ask us and we will confirm.</p></details>
+  </div>
+</section>
 
-<section><div class="w">
-<h2>Discover Double Red Rose</h2>
-<h2>Introducing...</h2>
-<p>Double Red Rose — a wellness product you can explore as part of your personal self-care journey.</p>
-<p>Whether you're reviewing wellness products for yourself or searching for a thoughtful addition to your daily routine, the first step is understanding what...</p>
-<p>Double Red Rose offers and whether it's right for your needs.</p>
-<p>Don't buy because of hype.</p>
-<p>Choose with knowledge, confidence, and a clear understanding of the product.</p>
-<h2>Make Your Decision With Confidence</h2>
-<p>A trustworthy wellness decision starts with reliable information.</p>
-<p>Before purchasing Double Red Rose, learn about its ingredients, intended use, directions, and manufacturer information.</p>
-<p>Where available, review genuine customer feedback and relevant product documentation so you can make an informed decision.</p>
-<p>Your trust matters. Your well-being matters. And honest information matters</p>
-</div></section>
+<section id="contact" class="alt-bg">
+  <div class="wrap">
+    <h2 class="t">Contact us</h2><p class="lead">Send a message and we will reply by email.</p>
+    <form id="f" novalidate>
+      <div><label for="n">Name</label><input id="n" required autocomplete="name"></div>
+      <div><label for="e">Email</label><input id="e" type="email" required autocomplete="email"></div>
+      <div><label for="p">Product (optional)</label><select id="p"><option value="">General question</option></select></div>
+      <div><label for="m">Message</label><textarea id="m" required></textarea></div>
+      <button class="btn" type="submit">Send message</button>
+      <div id="msg" role="status" aria-live="polite"></div>
+    </form>
+  </div>
+</section>
+</main>
 
-<section class="alt"><div class="w">
-<h2>Your Opportunity to Explore Double Red Rose</h2>
-<p class="c"><strong><em>Discover Double Red Rose</em></strong> Your Next Step Toward a More Intentional Wellness Routine</p>
-<p>The right wellness choice begins with the right information.</p>
-<p>Many people want to take better care of themselves but struggle to find products that suit their needs, preferences, and daily routines.</p>
-<p>With so many products and promises competing for attention, deciding what to choose can feel overwhelming.</p>
-<p>You don't need more confusion. You need clear information.*You need to understand what a product contains, how it is intended to be used, and what you can reasonably expect from it.</p>
-<p>Because when it comes to wellness, an informed decision is always better than a decision driven by exaggerated promises.</p>
-<h2>MEET DOUBLE RED ROSE.</h2>
-<p>A wellness product worth exploring if you're looking for an option that aligns with your personal needs.</p>
-<p>Instead of guessing, take a moment to learn about the product, its verified features, and its recommended use.Make your next wellness decision with clarity.</p>
-<p class="c"><strong>Trusted by customers who choose Double Red Rose for their wellness routine.</strong></p>
-<img src="https://www.modestywealthinhealth.com.ng/wp-content/uploads/2026/10/IMG-20261003-WA0032-1.jpg" alt="">
-</div></section>
-
-<section><div class="w">
-<h3>HERE'RE HEALTH BENEFITS OF DOUBLE RED ROSE SUPPLEMENT PLUS... ACTIVE INGREDIENTS</h3>
-<img src="https://www.modestywealthinhealth.com.ng/wp-content/uploads/2026/10/ingredient.png" alt="Active ingredients">
-<img src="https://www.modestywealthinhealth.com.ng/wp-content/uploads/2026/10/health.jpg" alt="Health benefits">
-<hr>
-<h2>OTHER BENEFITS INCLUDE THE FOLLOWING:</h2>
-<img src="https://www.modestywealthinhealth.com.ng/wp-content/uploads/2026/10/173217.jpg" alt="Other benefits">
-<h2>PROOF NEVER LIES! TAKE A LOOK...</h2>
-<img src="https://www.modestywealthinhealth.com.ng/wp-content/uploads/2026/10/173312.jpg" alt="">
-<img src="https://www.modestywealthinhealth.com.ng/wp-content/uploads/2026/10/IMG-20261006-WA0040.jpg" alt="">
-</div></section>
-
-<section class="alt"><div class="w">
-<h3>SPECIAL OFFER AVAILABLE NOW</h3>
-<p class="c">Limited quantities are available at the current offer.</p>
-<p class="c">Buy with confidence: satisfaction guarantee included.</p>
-<h3>WHY SHOULD YOU TRUST THE OFFER?</h3>
-<p>We believe customers deserve transparency.</p>
-<p>That's why your purchase decision should be supported by genuine product information, clear usage instructions, and authentic customer experiences where available.</p>
-<p>No fabricated testimonials. No promises of guaranteed results.</p>
-<p>Just the information you need to evaluate Double Red Rose for yourself.</p>
-</div></section>
-
-<section><div class="w c">
-<h2>REVIEWS/TESTIMONIALS OF REAL PEOPLE WHO USED DOUBLE RED ROSE AND CONFIRMED ITS POWERFUL EFFICACY FOR WELLNESS AND SOUND HEALTH</h2>
-<p>Click this link below now and hear all different reviews and testimonials of real people who used this powerful product and confirmed it's power of efficacy.</p>
-<p><a href="https://modestywealthinhealth.com.ng/testimonials"><strong><em>https://modestywealthinhealth.com.ng/testimonials</em></strong></a></p>
-</div></section>
-
-<section class="alt"><div class="w">
-<h2>FREQUENTLY ASKED QUESTIONS (FAQs)</h2>
-<p><strong>Is it easy to use? Yes.</strong></p>
-<p><strong>Is it securely packaged?</strong></p>
-<p><strong>Yes.</strong></p>
-<p><strong>How do I order?</strong></p>
-<p><strong>Simply fill the simple form below and place an order now.</strong></p>
-<p class="c"><a class="btn" href="#form" style="word-break:normal">Get the details</a></p>
-</div></section>
-
-<section id="form"><div class="w">
-<h2>Buyer's Contact Form</h2>
-<p class="c">Kindly fill out the form below</p>
-<form id="f" novalidate>
-<label for="name">Name *</label><input id="name" name="name" required maxlength="120" autocomplete="name">
-<label for="phone">Phone / WhatsApp No. *</label><input id="phone" name="phone" type="tel" required maxlength="30" autocomplete="tel">
-<label for="email">Email *</label><input id="email" name="email" type="email" required maxlength="160" autocomplete="email">
-<label for="address">Address *</label><input id="address" name="address" required maxlength="300" autocomplete="street-address">
-<label for="country">Country</label><input id="country" name="country" maxlength="80" autocomplete="country-name">
-<div class="hp" aria-hidden="true"><label>Leave empty<input name="website" tabindex="-1" autocomplete="off"></label></div>
-<div class="cf-turnstile" data-sitekey="YOUR_TURNSTILE_SITE_KEY" style="margin-top:14px"></div>
-<p class="c"><button class="btn" id="sub" type="submit">Submit</button></p>
-<div id="msg" role="status" aria-live="polite"></div>
-</form>
-</div></section>
-
-<button id="top" aria-label="Scroll to Top" title="Scroll to Top">↑</button>
+<footer><div class="wrap">&copy; <span id="y">2026</span> Wealth in Health. Not intended to diagnose, treat or cure any disease.</div></footer>
 
 <script>
-// Set this to your deployed Cloudflare Worker URL (see README.md)
-const ENDPOINT = "https://YOUR-WORKER.YOUR-SUBDOMAIN.workers.dev/";
-const f = document.getElementById("f"), msg = document.getElementById("msg"), sub = document.getElementById("sub");
-const show = (t, c) => { msg.textContent = t; msg.className = c; };
-f.addEventListener("submit", async e => {
-  e.preventDefault();
-  const d = Object.fromEntries(new FormData(f));
-  if (!d.name.trim() || !d.phone.trim() || !d.address.trim()) return show("Please fill in all required fields.", "err");
-  if (!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(d.email)) return show("Please enter a valid email address.", "err");
-  if (!/^[+\d][\d\s()\-]{5,}$/.test(d.phone.trim())) return show("Please enter a valid phone / WhatsApp number.", "err");
-  sub.disabled = true; show("Sending…", "ok");
-  try {
-    const r = await fetch(ENDPOINT, {method: "POST", headers: {"Content-Type": "application/json"},
-      body: JSON.stringify({...d, token: d["cf-turnstile-response"] || ""})});
-    const j = await r.json().catch(() => ({}));
-    if (r.ok && j.ok) { f.reset(); if (window.turnstile) turnstile.reset(); show("Thank you! Your details have been submitted successfully.", "ok"); }
-    else show(j.error || "Submission failed. Please try again.", "err");
-  } catch (_) { show("Network error. Please check your connection and try again.", "err"); }
-  sub.disabled = false;
-});
-const t = document.getElementById("top");
-addEventListener("scroll", () => t.style.display = scrollY > 400 ? "block" : "none");
-t.onclick = () => scrollTo({top: 0, behavior: "smooth"});
+(function(){
+  // ====== EDIT THESE ======
+  var EMAIL = 'your-email@example.com';
+  var PRODUCTS = [
+    {n:'Daily Vitamin Pack',c:'Supplements',d:'Balanced vitamins and minerals for everyday support.',p:'$24.00'},
+    {n:'Immune Boost Drops',c:'Supplements',d:'Easy liquid drops with vitamin C and zinc.',p:'$18.00'},
+    {n:'Herbal Calm Tea',c:'Teas',d:'A caffeine-free evening tea of soothing herbs.',p:'$12.00'},
+    {n:'Green Morning Tea',c:'Teas',d:'A gentle, light blend to start the day.',p:'$11.00'},
+    {n:'Pill Organizer Set',c:'Essentials',d:'Weekly organizer to keep routines on track.',p:'$9.00'},
+    {n:'Reusable Water Bottle',c:'Essentials',d:'Durable 750 ml bottle for daily hydration.',p:'$15.00'}
+  ];
+  // ========================
+  var $=function(s){return document.querySelector(s)};
+  var grid=$('#grid'), sel=$('#p');
+  PRODUCTS.forEach(function(x,i){
+    var a=document.createElement('article');a.className='item';a.dataset.c=x.c;
+    a.innerHTML='<small></small><h3></h3><p></p><div class="row"><span class="price"></span><button class="btn" type="button">Enquire</button></div>';
+    a.querySelector('small').textContent=x.c;a.querySelector('h3').textContent=x.n;
+    a.querySelector('p').textContent=x.d;a.querySelector('.price').textContent=x.p;
+    a.querySelector('button').addEventListener('click',function(){sel.value=x.n;$('#contact').scrollIntoView();$('#n').focus({preventScroll:true})});
+    grid.appendChild(a);
+    var o=document.createElement('option');o.value=o.textContent=x.n;sel.appendChild(o);
+  });
+  document.querySelectorAll('.filters button').forEach(function(b){
+    b.addEventListener('click',function(){
+      document.querySelectorAll('.filters button').forEach(function(k){k.setAttribute('aria-pressed',k===b)});
+      grid.querySelectorAll('.item').forEach(function(it){it.hidden=b.dataset.f!=='all'&&it.dataset.c!==b.dataset.f});
+    });
+  });
+  var m=$('#menu'),nav=$('#nav');
+  m.addEventListener('click',function(){m.setAttribute('aria-expanded',nav.classList.toggle('open'))});
+  nav.addEventListener('click',function(){nav.classList.remove('open');m.setAttribute('aria-expanded','false')});
+  $('#y').textContent=new Date().getFullYear();
+  $('#f').addEventListener('submit',function(ev){
+    ev.preventDefault();
+    var n=$('#n').value.trim(),e=$('#e').value.trim(),t=$('#m').value.trim(),msg=$('#msg');
+    if(!n||!/^\S+@\S+\.\S+$/.test(e)||!t){msg.textContent='Please enter your name, a valid email and a message.';return}
+    var body='Name: '+n+'\nEmail: '+e+'\nProduct: '+(sel.value||'General')+'\n\n'+t;
+    msg.textContent='Opening your email app…';
+    location.href='mailto:'+EMAIL+'?subject='+encodeURIComponent('Enquiry: '+(sel.value||'General question'))+'&body='+encodeURIComponent(body);
+  });
+})();
 </script>
 </body>
 </html>
